@@ -23,7 +23,7 @@ function deepestChild() {
   }
   
   while (queue.length > 0) {
-    const children = Array.from(queue[0].children);
+    const children = queue[0].children;
     if (children.length > 0) {
       children.forEach(addToQueue);
     }
