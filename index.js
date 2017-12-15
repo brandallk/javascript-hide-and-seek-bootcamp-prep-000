@@ -21,11 +21,8 @@ function deepestChild() {
   function search(node) {
     const children = node.children;
     
-    if (children.length === 0) {
-      return null;
-    } else {
-      
-    }
+    children.some( child => child.children.length
+    });
   }
 }
 
