@@ -20,7 +20,10 @@ function deepestChild() {
   
   function search(node) {
     const children = node.children;
-    console.log(children);
+    
+    if (children.length === 0) {
+      return null;
+    } 
   }
 }
 
