@@ -20,7 +20,9 @@ function deepestChild() {
   const queue = [document.querySelector('div#grand-node')];
   
   while (queue.length > 0) {
-    if ()
+    if (queue[0].children.length > 0) {
+      queue[0].children.forEach( child => queue.push(ch) );
+    }
   }
   
   
