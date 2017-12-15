@@ -23,3 +23,5 @@ function deepestChild() {
     console.log(children);
   }
 }
+
+deepestChild();
