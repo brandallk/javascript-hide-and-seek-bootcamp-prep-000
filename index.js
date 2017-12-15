@@ -25,7 +25,7 @@ function deepestChild() {
   while (queue.length > 0) {
     if (queue[0].children.length > 0) {
       const children = Array.from(queue[0].children);
-      children.forEach( addToQueue() );
+      children.forEach( addToQueue );
     }
     if (queue.length === 1) {
       deepest = queue[0];
