@@ -19,8 +19,8 @@ function deepestChild() {
   
   const queue = [document.querySelector('div#grand-node')];
   
-  while (queue.length) {
-    
+  while (queue.length > 0) {
+    if ()
   }
   
   
