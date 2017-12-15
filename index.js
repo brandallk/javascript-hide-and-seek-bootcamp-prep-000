@@ -10,6 +10,6 @@ function increaseRankBy(n) {
   const liElts = document.querySelectorAll('.ranked-list li');
   
   liElts.forEach( liElt =>
-    liElt.innerHTML = (parseInt(liElt.innerHTML) + n).toString();
+    liElt.innerHTML = (parseInt(liElt.innerHTML) + n).toString()
   );
 }
