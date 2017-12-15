@@ -23,7 +23,9 @@ function deepestChild() {
     
     if (children.length === 0) {
       return null;
-    } 
+    } else {
+      
+    }
   }
 }
 
