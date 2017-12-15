@@ -15,27 +15,21 @@ function increaseRankBy(n) {
 }
 
 function deepestChild() {
-  const parent = document.querySelector('div#grand-node');
-  
+  let deepest;
   const queue = [document.querySelector('div#grand-node')];
+  
+  function addToQueue(node) {
+    queue.push(node);
+  }
   
   while (queue.length > 0) {
     if (queue[0].children.length > 0) {
-      queue[0].children.forEach( child => queue.push(ch) );
+      queue[0].children.forEach( addToQueue(child) );
+    }
+    if (queue.length === 1) {
+      deepest = queue[0];
     }
   }
   
-  
-  
-  search(parent);
-  
-  function search(node) {
-    const children = node.children;
-    
-    if (children.some( child => child.children.length > 0 )) {
-      children.forEach( child => seach(child) );
-    } else {
-      return children[0];
-    }
-  }
+  return deepest;
 }
