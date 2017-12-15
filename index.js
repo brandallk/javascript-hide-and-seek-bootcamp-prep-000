@@ -29,6 +29,7 @@ function deepestChild() {
     if (queue.length === 1) {
       deepest = queue[0];
     }
+    queue.unshift();
   }
   
   return deepest;
